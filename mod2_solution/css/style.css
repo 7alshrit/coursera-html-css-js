@@ -1,0 +1,103 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center; 
+  margin-bottom: 15px;
+}
+
+p {
+  width: 90%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+}
+
+section h1 {
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+  margin-left: calc((100% / 3) * 2);
+  top: 0px;
+  left: 0px;
+  margin-top: 0px;
+}
+
+
+h1#chicken {
+  background-color: pink;
+}
+h1#beef {
+  background-color: red;
+}
+h1#sushi {
+  background-color: yellow;
+}
+
+section#one{
+  background-color: #FFFAF0; 
+  color: #333333;
+}
+
+
+section#two{
+  background-color: #FFF8E1;
+  color: #4E342E; 
+}
+
+section#three {
+  background-color: #E0F7FA; 
+  color: #01579B; 
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    margin:25px;
+    background-color: dimgray;
+  }
+  .col-lg-4 {
+    width: calc(33.33% - 50px);
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+    margin:25px;
+    background-color: dimgray;
+  }
+  .col-md-6 {
+    width: calc(50% - 50px);
+  }
+  .col-md-12 {
+    width: calc(100% - 50px) ;
+  }
+}
+
+/********** Medium devices only **********/
+@media (max-width: 767px)  {
+  .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+    margin:25px;
+    background-color: dimgray;
+  }
+  
+  .col-sm-12 {
+    width: calc(100% - 50px);
+  }
+}
